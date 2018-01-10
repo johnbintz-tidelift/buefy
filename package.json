@@ -32,8 +32,7 @@
     "build:lib:cssnano": "postcss --use cssnano --no-map --output lib/buefy.min.css lib/buefy.css",
     "build:lib": "npm run build:lib:clean && npm run build:lib:js && npm run build:lib:sass && npm run build:lib:autoprefix && npm run build:lib:cssnano",
     "build:docs": "node build/build.js",
-    "build": "npm run build:lib && npm run build:docs",
-    "postinstall": "npm install && npm run build"
+    "build": "npm run build:lib && npm run build:docs"
   },
   "keywords": [
     "bulma",
